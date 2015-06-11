@@ -17,6 +17,6 @@ public class ArogyacartInitializer implements WebApplicationInitializer{
     ctx.register(SwaggerConfiguration.class);
         ServletRegistration.Dynamic servlet = container.addServlet("dispatcher", new DispatcherServlet(ctx));
         servlet.setLoadOnStartup(1);
-        servlet.addMapping("/spring/*");
+        servlet.addMapping("/ArogyaCart/*");
     }
 }
