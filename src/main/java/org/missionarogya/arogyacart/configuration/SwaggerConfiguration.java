@@ -25,9 +25,11 @@ public class SwaggerConfiguration {
     @Bean
     public SwaggerSpringMvcPlugin customImplementation(){
 
-        return new SwaggerSpringMvcPlugin(this.springSwaggerConfig)
+    	SwaggerSpringMvcPlugin config =  new SwaggerSpringMvcPlugin(this.springSwaggerConfig)
                 .apiInfo(apiInfo())
-                .includePatterns(".*spring.*"); // assuming the API lives at something like http://myapp/api
+                .includePatterns(".*spring.*"); 
+    	config.swaggerGroup("ArogyaCart");
+    	return config;
     }
 
     private ApiInfo apiInfo() {
