@@ -15,7 +15,7 @@
     <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>/swagger/*</url-pattern>
-        <url-pattern>/jsp/*</url-pattern>
+        
         <url-pattern>/css/*</url-pattern>
         <url-pattern>/js/*</url-pattern>
     </servlet-mapping>
